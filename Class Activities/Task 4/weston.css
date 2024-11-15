@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.WCB{
+    background-color: #3D1A1A;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.L h1{
+    font-size: 30px;
+}
+
+.N{
+    display: flex;
+    align-items: center;
+}
+
+.NAVL{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.NAVL li{
+    display: inline-block;
+}
+
+.NAVL a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.6s ease;
+}
+
+.NAVL a:hover{
+    transform: scale(0.8);
+    text-shadow: 2px 2px 2px blue;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    text-align: center;
+    flex-grow: 1;
+    background-image: url(cocoa.jpg);
+    background-size: cover;
+    color: aliceblue;
+}
+
+footer{
+    background-color: #3D1A1A;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 24px;
+    color: chocolate;
+    position: relative;
+}
+
+.H h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: 40.6px;
+}
+
+.H p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18.6px;
+    margin-bottom: 22px;
+}
+
+.H button{
+    background-color: greenyellow;
+    color: white;
+    font-size: 16.4px;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 10px 20px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.H button:hover{
+    transform: scale(0.8);
+    text-shadow: 2px 2px 2px blue;
+}
+
+.ABOUT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    text-align: center;
+    flex-grow: 1;
+    background-image: url(wp.jpg);
+    background-size: cover;
+    color: aliceblue;
+}
+
+.Products-Items h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.items{
+    background-color: gold;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 220px;
+    text-align: center;
+    padding: 10px;
+}
+
+.items img{
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.BD{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    text-align: center;
+    flex-grow: 1;
+    background-image: url(wp.jpg);
+    background-size: cover;
+    color: aliceblue;
+}
+
+.items p{
+    color: black;
+    font-size: 14px;
+    margin: 15px 0 10px;
+    font-style: italic;
+}
+
+.items span{
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.BD1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    text-align: center;
+    flex-grow: 1;
+    background-image: url(wp.jpg);
+    background-size: cover;
+    color: aliceblue;
+}
+
+.Contact h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.BOX1{
+    background-color: gold;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.INFO{
+    flex: 1;
+    color: white;
+    font-size: 16px;
+}
+
+.INFO p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.INFO i{
+    width: 200px;
+    padding: 20px;
+    margin-right: 120px;
+    color: black;
+}
+
+.FORM{
+    flex: 1;
+}
+
+.FORM form{
+    display: flex;
+    flex-direction: column;
+}
+
+.FORM input, .FORM textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.FORM input{
+    height: 40px;
+}
+
+.FORM textarea{
+    height: 100px;
+}
+
+.FORM button{
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.BOX2 h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.CGRID{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.CITEMS img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+main{
+    padding: 40px;
+    text-align: center;
+}
+.BD2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    text-align: center;
+    flex-grow: 1;
+    background-image: url(wp.jpg);
+    background-size: cover;
+    color: aliceblue;
+}
