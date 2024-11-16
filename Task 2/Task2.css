@@ -1,0 +1,727 @@
+/*I imported the fonts of Teko from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
+
+/*Global Stylizing Tag*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body tag for styling the layout and typography and full background body*/
+body{
+    font-family: "Teko", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/*navigation bar*/
+.NAV-BAR{
+    display: flex;
+    padding: 24px;
+    background-color: #1E1E1E;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 14px 24px blueviolet;
+}
+/*Styling for the logo*/
+.LOGO{
+    font-size: 46px;
+    font-family: "Teko", sans-serif;
+    text-shadow: 2px 2px blue;
+}
+/*navigation menu*/
+.NAV-MENU{
+    display: flex;
+    font-family: "Teko", sans-serif;
+    font-size: 24px;
+    gap: 42px;
+}
+/*make anchor for list with text shadow*/
+nav a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px blue
+}
+/*To create and modify the search button*/
+.SEARCH-BTN button{
+    background-color: #C6E351;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: "Teko", sans-serif;
+    font-size: 33px;
+    padding: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 4px 4px darkgreen;
+}
+
+/*Main Section Tag To page content background space for each grid card box*/
+.Body-Container{
+    display: grid;
+    gap: 48px;
+    max-width: 900px;
+    padding: 48px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*first movie for rectangle movie container*/
+.M1{
+    grid-column: 1 / -1;
+    margin-inline: -6px;
+}
+.Rectangle-Container{
+    font-size: 22px;
+    background-color: #231651;
+    max-width: 99%;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 16px 16px 12px blue;
+}
+.P1{
+    width: 100%;
+    height: auto;
+    max-height: 375px;
+}
+.Details1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6px;
+    flex-direction: column;
+    margin-inline: 1px;
+    margin: -2px;
+    margin-top: -2px;
+}
+.Details1 h1{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6px;
+    margin-top: -12px;
+}
+.Details1 p{
+    display: flex;
+    margin-left: 6px;
+    width: 64%;
+    margin-top: -10px;
+}
+.MOVIE-BTN{
+    font-size: 2em;
+    width: 230px;
+    padding: 20px 33px;
+    color: black;
+    background-color: #4DCCBD;
+    border: 2px solid black;
+    border-radius: 42px;
+    cursor: pointer;
+    line-height: 1;
+    height: 126px;
+    margin: 20px;
+    margin-bottom: 24px;
+    margin-top: -900px;
+    margin-inline: 546px;
+}
+
+/*droble movies for vertical movie container*/
+.Vertical-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    box-shadow: 16px 16px 12px blue;
+    width: 100%;
+}
+.M2{
+    grid-column: 1/2;
+    background-color: #231651;
+}
+.P2{
+    width: 100%;
+    margin: 0px;
+    height: 500px;
+}
+.Details2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 18px;
+    margin: -8px;
+    margin-top: 2px;
+    padding: 6px;
+}
+.Details2 h1, p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+    flex: 1;
+}
+.MOVIE-BTN1{
+    display: block;
+    background-color: #4DCCBD;
+    border: 2px solid black;
+    border-radius: 42px;
+    font-size: 1em;
+    padding: 20px;
+    cursor: pointer;
+    line-height: 1;
+    margin: 12px;
+    margin-inline: 120px;
+}
+.M3{
+    grid-column: 2/3;
+    background-color: #231651;
+}
+.P3{
+    width: 100%;
+    margin: 0px;
+    height: 500px;
+}
+.Details3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 18px;
+    margin: -8px;
+    margin-top: 2px;
+    padding: 6px;
+}
+.Details3 h1, p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+    flex: 1;
+}
+.MOVIE-BTN2{
+    display: block;
+    background-color: #4DCCBD;
+    border: 2px solid black;
+    border-radius: 42px;
+    font-size: 1em;
+    padding: 20px;
+    cursor: pointer;
+    line-height: 1;
+    margin: 12px;
+    margin-inline: 120px;
+}
+
+/*Triple movies for horizontal movie container*/
+.Horizontal-Container{
+    display: flex;
+    background-color: #231651;
+    box-shadow: 16px 16px 12px blue;
+    overflow: hidden;
+    font-size: 14px;
+}
+.M4{
+    grid-column: 1/-1;
+}
+.P4{
+    width: 50%;
+    height: auto;
+}
+.Details4{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 32px;
+    margin: 22px;
+    font-size: 17px;
+    flex-direction: column;
+}
+.Details4 h1, p{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+}
+.MOVIE-BTN3{
+    display: block;
+    font-size: 1.6em;
+    padding: 18px;
+    color: black;
+    background-color: #4DCCBD;
+    border: 2px solid black;
+    border-radius: 42px;
+    cursor: pointer;
+    line-height: 1;
+    margin: 12px;
+    margin-top: 234px;
+}
+.M5{
+    grid-column: 1/-1;
+}
+.P5{
+    width: 50%;
+    height: auto;
+}
+.Details5{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 22px;
+    margin: 22px;
+    font-size: 17px;
+    flex-direction: column;
+}
+.Details5 h1, p{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+.MOVIE-BTN4{
+    display: block;
+    font-size: 1.6em;
+    padding: 18px;
+    color: black;
+    background-color: #4DCCBD;
+    border: 2px solid black;
+    border-radius: 42px;
+    cursor: pointer;
+    line-height: 1;
+    margin: 12px;
+    margin-top: 234px;
+}
+.M6{
+    grid-column: 1/-1;
+}
+.P6{
+    width: 50%;
+    height: auto;
+}
+.Details6{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 9px;
+    margin: 22px;
+    font-size: 17px;
+    flex-direction: column;
+}
+.Details6 h1, p{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+}
+.MOVIE-BTN5{
+    display: block;
+    font-size: 1.6em;
+    padding: 18px;
+    color: black;
+    background-color: #4DCCBD;
+    border: 2px solid black;
+    border-radius: 42px;
+    cursor: pointer;
+    line-height: 1;
+    margin: 12px;
+    margin-top: 234px;
+}
+
+/*Tablet viewpoint width screen min-width 721px max-width 1024px*/
+@media screen and (min-width: 721px) and (max-width: 1024px){
+    .NAV-BAR{
+        padding: 16px;
+    }
+    .LOGO{
+        font-size: 36px;
+    }
+    .NAV-MENU{
+        font-size: 20px;
+        gap: 24px;
+    }
+    .SEARCH-BTN button{
+        font-size: 24px;
+        padding: 12px;
+    }
+    .Body-Container{
+        max-width: 100%;
+        padding: 20px;
+        gap: 22px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .M1, .M2{
+        grid-column: 1/2;
+    }
+    .M2, .M3{
+        grid-column: 2/3;
+    }
+    .M3, .M4{
+        grid-column: 1/2;
+    }
+    .M4, .M5{
+        grid-column: 2/3;
+    }
+    .M5, .M6{
+        grid-column: 1/2;
+    }
+    .M6{
+        grid-column: 2 /3;
+    }
+    .Rectangle-Container{
+        height: 100%;
+        flex-direction: column;
+        box-shadow: 2px 14px 24px blue;
+    }
+    .Vertical-Container{
+        height: 100%;
+        width: 330px;
+        flex-direction: column;
+        box-shadow: 2px 14px 24px blue;
+    }
+    .Horizontal-Container{
+        height: 100%;
+        flex-direction: column;
+        box-shadow: 2px 14px 24px blue;
+    }
+    .Details1{
+        font-size: 24px;
+        padding: 2px;
+        margin: 4px;
+        margin-top: 2px;
+    }
+    .Details2{
+        font-size: 24px;
+        padding: 2px;
+        margin: 4px;
+        margin-top: 2px;
+    }
+    .P1,.P2{
+        height: 254px;
+        object-fit: cover;
+    }
+    .MOVIE-BTN{
+        margin-inline: 90px;
+        width: 142px;
+        margin-top: 12px;
+        font-size: 1.2em;
+        padding: 18px;
+    }
+    .MOVIE-BTN1{
+        margin-inline: 90px;
+        width: 155px;
+        margin-top: 84px;
+        font-size: 1.2em;
+        padding: 26px 16px;
+    }
+    .P3{
+        height: 254px;
+        object-fit: cover;
+    }
+    .P4{
+        width: auto;
+        height: 254px;
+        object-fit: cover;
+        margin-inline: 0px;
+    }
+    .Details3{
+        font-size: 26px;
+        padding: 8px;
+        margin: -5px;
+        margin-top: -4px;
+    }
+    .Details4{
+        font-size: 24px;
+        padding: 2px;
+        margin: 16px;
+        margin-inline-end: 6px;
+        margin-top: 10px;
+    }
+    .MOVIE-BTN2{
+        margin-inline: 90px;
+        width: 160px;
+        margin-inline-start: 90px;
+        margin-top: 24px;
+        margin-block: 40px;
+        font-size: 1.2em;
+        padding: 26px;
+    }
+    .MOVIE-BTN3{
+        margin-inline: 90px;
+        width: 160px;
+        margin-inline-start: 80px;
+        margin-top: 33px;
+        margin-block: 70px;
+        font-size: 2.2em;
+        padding: 24px;
+    }
+    .P5{
+        width: auto;
+        height: 254px;
+        object-fit: cover;
+        margin-inline: 0px;
+    }
+    .P6{
+        width: auto;
+        height: 254px;
+        object-fit: cover;
+        margin-inline: 0px;
+    }
+    .Details5{
+        font-size: 28px;
+        padding: 2px;
+        margin: 2px;
+        margin-inline-end: 6px;
+        margin-top: 10px;
+    }
+    .Details6{
+        font-size: 24px;
+        padding: 2px;
+        margin: 16px;
+        margin-inline-end: 6px;
+        margin-top: 10px;
+    }
+    .MOVIE-BTN4{
+        margin-inline: 90px;
+        width: 160px;
+        margin-inline-start: 80px;
+        margin-top: 33px;
+        margin-block: 70px;
+        font-size: 2.2em;
+        padding: 24px;
+    }
+    .MOVIE-BTN5{
+        margin-inline: 90px;
+        width: 160px;
+        margin-inline-start: 80px;
+        margin-top: 33px;
+        margin-block: 70px;
+        font-size: 2.2em;
+        padding: 24px;
+    }
+}
+
+/*Small Mobile viewpoint width screen min-width 361px max-width 541px*/
+@media screen and (min-width: 361px) and (max-width: 721px){
+    .NAV-BAR{
+        padding: 6px;
+        margin: 0px;
+        margin-inline-end: -57px;
+        flex-direction: column;
+        gap: 2px;
+        margin-bottom: 26px;
+        align-items: center;
+    }
+    .LOGO{
+        font-size: 46px;
+        margin-top: 6px;
+        margin-bottom: -55px;
+        margin-inline-end: -14px;
+        margin-inline-start: -294px;
+    }
+    .NAV-MENU{
+        font-size: 16px;
+        display: none;
+    }
+    .SEARCH-BTN button{
+        font-size: 24px;
+        margin-top: -12px;
+        margin-inline-start: 284px;
+        margin-bottom: 20px;
+        padding: 10px 18px;
+    }
+    .Body-Container{
+        max-width: 100%;
+        padding: 6px;
+        margin-top: 33px;
+        margin-inline: -24px;
+        margin-inline-start: 18px;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .M1, .M2, .M3, .M4, .M5, .M6{
+        grid-column: 1/-1;
+    }
+    .Rectangle-Container{
+        max-width: 100%;
+        box-shadow: 8px 8px 8px blue;
+    }
+    .P1{
+        max-height: 250px;
+        object-fit: cover;
+    }
+    .MOVIE-BTN{
+        margin-inline: auto;
+        margin-top: -650px;
+        width: 140px;
+        height: 80px;
+        font-size: 1.4em;
+    }
+    .Vertical-Container{
+        height: auto;
+        box-shadow: 8px 8px 8px blue;
+    }
+    .P2{
+        max-height: 354px;
+        object-fit: cover;
+    }
+    .P3{
+        max-height: 354px;
+        object-fit: cover;
+    }
+    .Horizontal-Container{
+        flex-direction: column;
+        box-shadow: 8px 8px 8px blue;
+    }
+    .P4, .P5, .P6{
+        width: 100%;
+        height: 365px;
+        object-fit: cover;
+    }
+    .Details1{
+        padding: 12px;
+        font-size: 22.2px;
+        margin: 0px;
+    }
+    .Details1 h1{
+        font-size: 1.4em;
+        margin-inline: 123px;
+        margin-bottom: 12px;
+    }
+    .Details1 p{
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin-bottom: 6px;
+        margin-inline: 64px;
+        overflow: hidden;
+    }
+    .Details2{
+        padding: 12px;
+        font-size: 22.2px;
+        margin: 0px;
+    }
+    .Details2 h1{
+        font-size: 1.4em;
+        margin-inline: 110px;
+        margin-bottom: 12px;
+    }
+    .Details2 p{
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin-inline: 60px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .Details3{
+        padding: 12px;
+        font-size: 22.2px;
+        margin: 0px;
+    }
+    .Details3 h1{
+        font-size: 1.4em;
+        margin-inline: 110px;
+        margin-bottom: 12px;
+    }
+    .Details3 p{
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin-inline: 60px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .Details4{
+        padding: 12px;
+        font-size: 22.2px;
+        margin: 0px;
+    }
+    .Details4 h1{
+        font-size: 1.4em;
+        margin-inline: 110px;
+        margin-bottom: 12px;
+    }
+    .Details4 p{
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin-inline: 60px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .Details5{
+        padding: 12px;
+        font-size: 22.2px;
+        margin: 0px;
+    }
+    .Details5 h1{
+        font-size: 1.4em;
+        margin-inline: 110px;
+        margin-bottom: 12px;
+    }
+    .Details5 p{
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin-inline: 60px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .Details6{
+        padding: 12px;
+        font-size: 22.2px;
+        margin: 0px;
+    }
+    .Details6 h1{
+        font-size: 1.4em;
+        margin-bottom: 8px;
+    }
+    .Details6 p{
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin-inline: 60px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .MOVIE-BTN{
+        width: 345px;
+        font-size: 1.2em;
+        padding: 10px;
+        margin: 12px auto;
+        margin: 16px;
+    }
+    .MOVIE-BTN1{
+        width: 333px;
+        font-size: 1.2em;
+        padding: 10px;
+        margin: 12px auto;
+        margin: 16px;
+    }
+    .MOVIE-BTN2{
+        width: 333px;
+        font-size: 1.2em;
+        padding: 10px;
+        margin: 12px auto;
+        margin: 16px;
+    }
+    .MOVIE-BTN3{
+        width: 333px;
+        font-size: 2.2em;
+        padding: 10px;
+        margin: 12px auto;
+        margin: 12px;
+    }
+    .MOVIE-BTN4{
+        width: 333px;
+        font-size: 2.2em;
+        padding: 10px;
+        margin: 12px auto;
+        margin: 12px;
+    }
+    .MOVIE-BTN5{
+        width: 333px;
+        font-size: 2.2em;
+        padding: 10px;
+        margin: 12px auto;
+        margin: 12px;
+    }
+}
